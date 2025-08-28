@@ -9,37 +9,39 @@
 <body>
   <div class="container">
     <aside class="sidebar">
+      <button class="toggle-btn" onclick="document.querySelector('.sidebar').classList.toggle('collapsed')">☰</button>
       <img src="img/Coco.jfif" alt="Foto de perfil" class="avatar">
       <h2 class="name">Salvador Galdámez</h2>
       <p class="title">Desarrollador de software</p>
       <nav class="nav">
-        <a href="#inicio" class="active">Sobre mí</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#lenguajes">Lenguajes</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#inicio" class="active"><span>Sobre mí</span></a>
+        <a href="#experiencia"><span>Experiencia</span></a>
+        <a href="#proyectos"><span>Proyectos</span></a>
+        <a href="#lenguajes"><span>Lenguajes</span></a>
+        <a href="#contacto"><span>Contacto</span></a>
       </nav>
     </aside>
 
     <main class="content">
+      <!-- ====== SOBRE MÍ ====== -->
       <section id="inicio">
         <h1>Sobre mí</h1>
-        <p>Me gusta mucho crear y programar sistemas que ayuden a la vida diaria de las personas,
-          especialmente para la salud, el tema en que me gustaría especializarme en ciberseguridad, para poder conocer vulnerabilidades
-          y prevenir ese tipo de problemas para aquellas personas que no tienen los conocimientos necesarios, 
-          también me gusta mucho crear diseños originales y propios, por lo que soy muy creativo a la hora de crear
-          mis sistemas.
+        <p>
+          Me gusta mucho crear y programar sistemas que ayuden a la vida diaria de las personas,
+          especialmente para la salud. Me gustaría especializarme en ciberseguridad para poder
+          conocer vulnerabilidades y prevenir ese tipo de problemas para quienes no tienen
+          los conocimientos necesarios. También me gusta mucho crear diseños originales y propios,
+          por lo que soy muy creativo a la hora de crear mis sistemas.
         </p>
       </section>
 
-      <br>
-
+      <!-- ====== EXPERIENCIA ====== -->
       <section id="experiencia">
         <h2>Experiencia laboral</h2>
+
         <div class="item">
           <h3>Cirujanas Generales y Laparoscopía <span class="fecha">Julio 2025</span></h3>
-          <p>Creación de una página web para una clínica que necesitaba un sitio para brindar
-            información de sus servicios</p>
+          <p>Creación de una página web para una clínica que necesitaba un sitio para brindar información de sus servicios</p>
           <ul>
             <li><a href="https://github.com/CirujanasLap/CirujanasLap.github.io">Repositorio</a></li>
             <li><a href="https://cirujanaslap.github.io/Cirujanas/">Página web</a></li>
@@ -59,12 +61,14 @@
         </div>
       </section>
 
+      <!-- ====== PROYECTOS ====== -->
       <section id="proyectos">
         <h2>Proyectos personales/académicos</h2>
+
         <div class="item">
           <h3>Weather report</h3>
           <p>Página web de música que reproduce música según el clima</p>
-          <ul> 
+          <ul>
             <li><a href="https://github.com/Sglmz/WeatherReport.github.io">Repositorio</a></li>
             <li><a href="https://sglmz.github.io/WeatherReport.github.io/Spotify/index.html">Página web</a></li>
           </ul>
@@ -104,45 +108,25 @@
         </div>
       </section>
 
+      <!-- ====== LENGUAJES ====== -->
       <section id="lenguajes" class="lenguajes-section">
         <h2 class="lenguajes-title">Lenguajes y frameworks que manejo</h2>
         <div class="lenguajes-grid">
-          <div class="lenguaje-card">
-            <img src="img/html.png" alt="HTML"><span>HTML</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/css.png" alt="CSS"><span>CSS</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/js.png" alt="JavaScript"><span>JavaScript</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/java.png" alt="Java"><span>Java</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/python.png" alt="Python"><span>Python</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/sql.png" alt="SQL"><span>SQL</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/php.png" alt="PHP"><span>PHP</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/Spring.png" alt="Spring Boot"><span>Spring</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/react.png" alt="React Native"><span>React</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/bootstrap.png" alt="Bootstrap"><span>Bootstrap</span>
-          </div>
-          <div class="lenguaje-card">
-            <img src="img/cplus.png" alt="Bootstrap"><span>C++</span>
-          </div>
+          <div class="lenguaje-card"><img src="img/html.png" alt="HTML"><span>HTML</span></div>
+          <div class="lenguaje-card"><img src="img/css.png" alt="CSS"><span>CSS</span></div>
+          <div class="lenguaje-card"><img src="img/js.png" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="lenguaje-card"><img src="img/java.png" alt="Java"><span>Java</span></div>
+          <div class="lenguaje-card"><img src="img/python.png" alt="Python"><span>Python</span></div>
+          <div class="lenguaje-card"><img src="img/sql.png" alt="SQL"><span>SQL</span></div>
+          <div class="lenguaje-card"><img src="img/php.png" alt="PHP"><span>PHP</span></div>
+          <div class="lenguaje-card"><img src="img/Spring.png" alt="Spring Boot"><span>Spring</span></div>
+          <div class="lenguaje-card"><img src="img/react.png" alt="React Native"><span>React</span></div>
+          <div class="lenguaje-card"><img src="img/bootstrap.png" alt="Bootstrap"><span>Bootstrap</span></div>
+          <div class="lenguaje-card"><img src="img/cplus.png" alt="C++"><span>C++</span></div>
         </div>
       </section>
 
+      <!-- ====== CONTACTO ====== -->
       <section id="contacto" class="contacto-section">
         <h2 class="contacto-title">Contacto</h2>
         <div class="contacto-card">
